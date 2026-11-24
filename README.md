@@ -133,19 +133,3 @@ To preview the production build locally:
 ```bash
 npm run preview
 ```
-
-## 🌐 GitHub Repository
-
-[https://github.com/Soundarya-S-Kenstack/mepzora-ai](https://github.com/Soundarya-S-Kenstack/mepzora-ai)
-
-## 📩 Contact
-
-**MEPZORA.ai**
-
-Website: [https://mepzora.ai](https://mepzora.ai)
-
-Email: info@mepzora.ai
-
----
-
-*MEPZORA.ai – Bringing Intelligence to Engineering and Construction.*
