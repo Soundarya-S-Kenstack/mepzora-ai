@@ -1,75 +1,151 @@
-# React + TypeScript + Vite
+# MEPZORA.ai – AI-Powered Construction Intelligence
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Transforming Engineering Drawings into Construction Intelligence.**
 
-Currently, two official plugins are available:
+MEPZORA.ai is an AI-powered construction engineering intelligence platform designed to simplify the process of understanding engineering drawings and converting them into actionable construction data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The platform aims to identify building components, extract measurements, calculate quantities, generate Bills of Quantities (BOQ), and support construction cost estimation across different engineering disciplines.
 
-## React Compiler
+## 🚀 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Construction projects involve complex architectural, structural, mechanical, electrical, and plumbing drawings. Extracting information and calculating quantities manually can be time-consuming.
 
-## Expanding the ESLint configuration
+MEPZORA.ai aims to streamline this process through intelligent drawing analysis and automated quantity estimation workflows.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Key Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Intelligent Drawing Analysis** – Designed to interpret engineering drawings and extract relevant information.
+- **Component Identification** – Aims to identify construction components across different engineering disciplines.
+- **Automated Quantity Takeoff** – Supports measurement extraction and quantity calculation workflows.
+- **BOQ Generation** – Designed to organize component details and quantities into structured Bills of Quantities.
+- **Construction Cost Estimation** – Supports project cost estimation based on extracted quantities and relevant rates.
+- **Industry-Focused Solutions** – Designed for shopping malls, commercial buildings, residential projects, and institutional buildings.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🏗️ Engineering Disciplines
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Architectural Engineering
+- Structural Engineering
+- Mechanical Engineering
+- Electrical Engineering
+- Plumbing Engineering
 
+## 🛠️ Technologies Used
+
+- **React.js** – Frontend user interface
+- **Vite** – Development server and build tool
+- **JavaScript** – Application functionality
+- **HTML5** – Web structure
+- **CSS3** – Styling and responsive layouts
+- **Framer Motion** – UI animations
+- **Lucide React** – Icons
+
+## 📂 Project Structure
+
+```text
+mepzora-ai/
+│
+├── public/
+│   ├── favicon.svg
+│   ├── icons.svg
+│   ├── mepzora-favicon.svg
+│   └── mepzora-logo.png
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── FAQ.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Industries.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Solutions.jsx
+│   │   ├── VisionMission.jsx
+│   │   ├── WhyChooseUs.css
+│   │   └── Workflow.css
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## 💻 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Follow these instructions to run the project locally.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
 
+- Node.js
+- npm
+- Git
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Soundarya-S-Kenstack/mepzora-ai.git
 ```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd mepzora-ai
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the Development Server
+
+```bash
+npm run dev
+```
+
+### 5. Open in Browser
+
+Open the local URL displayed in your terminal, usually:
+
+```text
+http://localhost:5173/
+```
+
+## 📦 Build for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+```
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## 🌐 GitHub Repository
+
+[https://github.com/Soundarya-S-Kenstack/mepzora-ai](https://github.com/Soundarya-S-Kenstack/mepzora-ai)
+
+## 📩 Contact
+
+**MEPZORA.ai**
+
+Website: [https://mepzora.ai](https://mepzora.ai)
+
+Email: info@mepzora.ai
+
+---
+
+*MEPZORA.ai – Bringing Intelligence to Engineering and Construction.*
