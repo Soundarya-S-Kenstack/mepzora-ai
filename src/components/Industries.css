@@ -1,0 +1,480 @@
+
+/* =================================
+   INDUSTRIES SECTION
+================================= */
+
+.industries-section {
+    position: relative;
+    padding: 110px 0;
+    background: #f7f9fc;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.industries-container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =================================
+   BACKGROUND DECORATION
+================================= */
+
+.industries-blueprint {
+    position: absolute;
+    inset: 0;
+    opacity: 0.035;
+    background-image:
+        linear-gradient(#1b4775 1px, transparent 1px),
+        linear-gradient(90deg, #1b4775 1px, transparent 1px);
+    background-size: 55px 55px;
+    pointer-events: none;
+}
+
+
+/* =================================
+   SECTION HEADER
+================================= */
+
+.industries-header {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 65px;
+}
+
+.industries-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #1764a5;
+    font-size: 12px;
+    font-weight: 750;
+    letter-spacing: 1.7px;
+    margin-bottom: 20px;
+}
+
+.industries-label-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 29px;
+    height: 29px;
+    background: #e3effa;
+    border-radius: 7px;
+}
+
+.industries-header h2 {
+    font-size: clamp(32px, 4vw, 46px);
+    line-height: 1.2;
+    font-weight: 750;
+    color: #10243e;
+    margin: 0 0 20px;
+    letter-spacing: -1.5px;
+}
+
+.industries-header h2 span {
+    display: block;
+    color: #1769aa;
+}
+
+.industries-header p {
+    color: #68788b;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 700px;
+    margin: auto;
+}
+
+.industries-heading-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 25px;
+}
+
+.industries-heading-line span {
+    height: 4px;
+    border-radius: 10px;
+    background: #2478ba;
+}
+
+.industries-heading-line span:nth-child(1) {
+    width: 18px;
+    opacity: 0.5;
+}
+
+.industries-heading-line span:nth-child(2) {
+    width: 42px;
+}
+
+.industries-heading-line span:nth-child(3) {
+    width: 18px;
+    opacity: 0.5;
+}
+
+
+/* =================================
+   INDUSTRY GRID
+================================= */
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+
+/* =================================
+   INDUSTRY CARD
+================================= */
+
+.industry-card {
+    position: relative;
+    min-height: 430px;
+    border-radius: 17px;
+    overflow: hidden;
+    isolation: isolate;
+    background: #10243e;
+    box-shadow: 0 12px 35px rgba(16, 36, 62, 0.12);
+    cursor: default;
+}
+
+
+/* Background Image */
+
+.industry-image {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+}
+
+.industry-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.industry-card:hover .industry-image img {
+    transform: scale(1.08);
+}
+
+
+/* Dark Overlay */
+
+.industry-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(8, 24, 43, 0.35) 0%,
+        rgba(8, 24, 43, 0.60) 45%,
+        rgba(8, 24, 43, 0.96) 100%
+    );
+    transition: background 0.4s ease;
+}
+
+.industry-card:hover .industry-overlay {
+    background: linear-gradient(
+        180deg,
+        rgba(8, 24, 43, 0.25) 0%,
+        rgba(8, 24, 43, 0.65) 45%,
+        rgba(8, 24, 43, 0.97) 100%
+    );
+}
+
+
+/* =================================
+   CARD CONTENT
+================================= */
+
+.industry-content {
+    min-height: 430px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+}
+
+
+/* Card Top */
+
+.industry-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 28px;
+    left: 30px;
+    right: 30px;
+}
+
+.industry-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 11px;
+    backdrop-filter: blur(10px);
+}
+
+.industry-number {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* Category Tag */
+
+.industry-tag {
+    display: inline-block;
+    width: fit-content;
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 1.5px;
+    color: #8bc9ff;
+    margin-bottom: 13px;
+}
+
+
+/* Titles */
+
+.industry-content h3 {
+    font-size: 27px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px;
+}
+
+.industry-content h4 {
+    font-size: 13px;
+    font-weight: 550;
+    color: #c4d8e9;
+    margin: 0 0 13px;
+}
+
+.industry-content p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.82);
+    margin: 0;
+    max-width: 500px;
+}
+
+
+/* =================================
+   CARD FOOTER
+================================= */
+
+.industry-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 23px;
+    padding-top: 17px;
+    border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.industry-footer > span {
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.industry-arrow {
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.industry-card:hover .industry-arrow {
+    background: #ffffff;
+    color: #1769aa;
+    transform: rotate(45deg);
+}
+
+
+/* =================================
+   BOTTOM INFORMATION STRIP
+================================= */
+
+.industries-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 55px;
+    padding: 25px 30px;
+    background: #ffffff;
+    border: 1px solid #e5edf5;
+    border-radius: 13px;
+    box-shadow: 0 8px 25px rgba(16, 36, 62, 0.05);
+}
+
+.industries-bottom-icon {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1769aa;
+    background: #eaf3fc;
+    border-radius: 12px;
+}
+
+.industries-bottom-content {
+    flex: 1;
+}
+
+.industries-bottom-content span {
+    display: block;
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 1.5px;
+    color: #2478ba;
+    margin-bottom: 6px;
+}
+
+.industries-bottom-content h3 {
+    font-size: 17px;
+    font-weight: 650;
+    color: #10243e;
+    margin: 0;
+}
+
+.industries-bottom-mark {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1769aa;
+    background: #eaf3fc;
+    border-radius: 50%;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 900px) {
+
+    .industries-section {
+        padding: 85px 0;
+    }
+
+    .industries-grid {
+        gap: 18px;
+    }
+
+    .industry-card,
+    .industry-content {
+        min-height: 450px;
+    }
+
+    .industry-content {
+        padding: 23px;
+    }
+
+    .industry-top {
+        left: 23px;
+        right: 23px;
+    }
+
+    .industry-content h3 {
+        font-size: 23px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .industries-section {
+        padding: 70px 0;
+    }
+
+    .industries-container {
+        width: 91%;
+    }
+
+    .industries-header {
+        margin-bottom: 40px;
+    }
+
+    .industries-header h2 {
+        font-size: 31px;
+        letter-spacing: -0.8px;
+    }
+
+    .industries-header p {
+        font-size: 13px;
+    }
+
+    .industries-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .industry-card,
+    .industry-content {
+        min-height: 420px;
+    }
+
+    .industry-content {
+        padding: 25px;
+    }
+
+    .industry-content h3 {
+        font-size: 25px;
+    }
+
+    .industries-bottom {
+        padding: 20px;
+        gap: 13px;
+        margin-top: 35px;
+    }
+
+    .industries-bottom-content h3 {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .industries-bottom-content span {
+        font-size: 9px;
+    }
+
+    .industries-bottom-icon {
+        width: 43px;
+        height: 43px;
+    }
+
+    .industries-bottom-mark {
+        display: none;
+    }
+
+}
